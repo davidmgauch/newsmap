@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+
+    <!-- plugins css -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/MarkerCluster.css" />
+    <link rel="stylesheet" href="css/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css" />
+    
+
+  </head>
+  <body>
+      
+
+      
+
+      <div id="apHeader">
+       
+        <img id="apLogo" src="img/AP_logo.png">
+        <img id="apBigStory" src="img/apTheBigStory.svg">
+
+
+        <div id="apSearch" class="apMenuContainerIcons">
+            <a href="http://bigstory.ap.org/search/site">
+            <img id="searchImg" src="img/search_icon.svg">
+            <img id="menuIco" src="img/menu_icon.svg">
+            </a>
+        </div>
+        <div id="apMap" class="apMenuContainerIcons">
+            <a href="http://google.com">
+            <img id="apMapImg" src="img/usaMenuImg.svg">
+            </a>
+        </div>
+        <div id="apConversation" class="apMenuContainerTexts">
+            <a href="http://bigstory.ap.org/the-conversation">
+            <h1 class="apMenuFont">The Conversation</h1>
+            </a>
+        </div>
+
+        <div id="apLatest" class="apMenuContainerTexts">
+            <a href="http://bigstory.ap.org/latest">
+            <h1 class="apMenuFont">The Latest News</h1>
+            </a>
+        </div>
+
+        
+
+        
+        
+        <!-- 
+        <img id="apSearch" src="img/AP_logo.png"> -->
+      </div>
+      
+      <!-- <div id="testModal"></div> -->
+
+      <!-- <div id="splashScreen"></div> -->
+      <!-- <button>Full Map</button> -->
+      <div id="apMapLogoContainer">
+          <img id="mapLogo" src="img/apNewsMap.svg">
+      </div>
+      <div id="map-button">
+        <img id="map-icon" src="img/usa_icon.svg">
+        <img id="map-icon-active" src="img/usa_icon-active.svg">
+      </div> 
+      <!-- <div class="rightContainer"></div> -->
+      <!-- <div id="mapMask"></div> -->
+        
+      
+      
+
+      
+      <div id="map"></div>
+      <div id="closeContainer"></div>
+      <div class="container" >
+
+          <!-- <div id="logoContainer">
+            <img id="logoImage" src="img/Header2.png">
+          </div>   -->
+          <div id="emptyContainer"></div>     
+          <div id="scrollContainer"></div>  
+          <div id="emptyContainer"></div>
+      
+      </div>
+
+      
+
+      <!-- <div class="testButton">Get All Markers</div> -->
+
+
+
+
+
+      
+    
+
+    
+
+
+
+    
+    
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB759w_Iv-JJ0xfusmTOU5gYK6Z3kkEuMQ",
+        authDomain: "locate-the-news.firebaseapp.com",
+        databaseURL: "https://locate-the-news.firebaseio.com",
+        storageBucket: "locate-the-news.appspot.com",
+        messagingSenderId: "16833659874"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!-- plugins js -->
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="js/leaflet.markercluster-src.js"></script>
+    <script src="js/tinysort.min.js"></script>
+    <script src="js/leaflet.activearea.js"></script>
+    <script src="js/draggabilly.pkgd.min.js"></script>
+   
+
+    
+
+    <!-- js -->
+    <script src="js/leafletTest.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+  </body>
+</html>

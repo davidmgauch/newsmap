@@ -1,0 +1,851 @@
+/*AP Red = #FF322E*/
+/* Optional: Makes the sample page fill the window. */
+
+
+/*New Code Test*/
+
+
+/*.marker-mycluster {
+background-color: rgba(255,191,84, 0.6);
+}
+.marker-mycluster div {
+background-color: rgba(255,191,84, 1);
+}*/
+
+/*.allMarkers:focus {
+  outline: none;
+}
+
+.leaflet-marker-icon:focus {
+  outline: none;
+}*/
+
+.allMarkers {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.leaflet-marker-icon {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.leaflet-interactive {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#map-button {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+
+
+#testModal {
+	position: relative;
+	z-index: 1800;
+	width: 80%;
+	height: 80%;
+	background-color: black;
+}
+
+.testModalText {
+	color: white;
+	font-size: 10px;
+}
+
+.activeArea {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 550px;
+	height: 500px;
+	border: 2px solid green;
+	}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+img#map-icon {
+	width: 100%;
+	height: 57px;
+}
+
+div#apHeader {
+	position: relative;
+	z-index: 1800;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #081C2F;
+	/*cursor: pointer;*/
+}
+
+img#apLogo{
+	position: relative;
+	width: 52px;
+	top: 0;
+	left: 20px;
+}
+
+#apBigStory{
+	position: relative;
+	width: 128px;
+	top: -18px;
+	left: 50px;
+}
+
+h1.apMenuFont{
+	font-family: Helvetica Neue;
+	font-weight: normal;
+	font-size: 0.8125rem;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.apMenuContainerTexts{
+	display: none;
+
+}
+
+.apMenuContainerIcons{
+	position: relative;
+	display: inline-block;
+	float: right;
+	top: 0;
+	width: 80px;
+	height: 50px;
+	/*background-color: grey;*/
+}
+
+/*#apLatest{
+	right: 0px;
+}
+
+#apConversation{
+	right: 300px;
+}*/
+
+#searchImg {
+	display: none;
+}
+
+img#menuIco {
+	display: block;
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 18px;
+}
+
+#apMapImg {
+	display: none;
+}
+
+#apMapLogoContainer {
+	display: none;
+
+}
+
+#mapLogo {
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 22px;
+}
+
+
+
+#map-button img:last-child{display:none}
+#map-button:hover img:first-child{display:none}
+#map-button:hover img:last-child{display:inline-block}
+
+div#map-button {
+	position: relative;
+	z-index: 800;
+	top: 14px;
+	left: 21px;
+	width: 50px;
+	cursor: pointer;
+	
+}
+
+img#map-icon-active {
+	position: relative;
+	z-index: 800;
+	top: 12px;
+	width: 50px;
+	cursor: pointer;
+}
+
+
+
+/*div#map-button:hover {
+	position: relative;
+	z-index: 800;
+	top: 8px;
+	left: 8px;
+	width: 84px;
+	height: 57px;
+}*/
+
+button {
+	position: relative;
+	z-index: 800;
+	top: 8px;
+	left: 8px;
+	background-color: grey;
+	width: 80px;
+	height: 30px;
+
+
+	padding:5px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 7px;
+	font-size: 12px;
+	color:#000;
+	text-decoration:none;
+	-webkit-box-shadow: 0px 2px 2px 0.1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 2px 2px 0.1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 2px 0.1px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  color: grey;
+}
+
+
+div#returnMap {
+	position: relative;
+	z-index: 800;
+	top: 0;
+	left: 25%;
+	background-color: grey;
+	width: 100px;
+	height: 50px;
+}
+
+div#splashScreen {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+}
+
+div#mapMask {
+	/*display: block;*/
+
+	position: relative;
+	top: -100px;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #747E87;
+	z-index: 800;
+	border-top: 4px solid #BFCBD6;
+}
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #747E87;
+}  
+
+div#map {
+  position: absolute; 
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0);
+}
+
+/*.disableCountry {
+	cursor: crosshair;
+}*/
+
+.leaflet-interactive{
+	/*cursor: crosshair;*/
+	/*background-color: grey;*/
+
+}
+
+.leaflet-container {
+    background-color:rgba(255,0,0,0.0);
+}
+
+
+div.container {
+	display: block;
+	height: 175px;
+	/*max-height: 400px;*/
+	position: absolute;
+	bottom: 0px;
+	z-index: 1000;
+	width: 100%;
+	/*background-color: rgba(255,255,255,.3);*/
+	overflow: auto;
+
+}
+
+.testButton {
+
+	background-color: rgba(200,0,0,1);
+	width: 100px;
+	height: 100px;
+	z-index: 1000;
+	position: absolute;
+}
+
+
+
+div#closeContainer {
+	display: none;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	bottom: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+
+}
+
+div.rightContainer {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 500px;
+	overflow: auto;
+}
+
+div#scrollContainer {
+
+	width: 94%;
+	margin: auto;
+	/*height: 100%;*/
+	overflow: hidden;
+
+}
+
+
+
+
+div.stateContainer {
+	margin-top: 20px;
+	width: 100%;
+	height:40px;
+	background-color: rgba(167,176,184,0.9);
+}
+
+
+h1.stateText{
+	display: block;
+	text-align: center;
+	font-family:Helvetica Neue;
+	font-weight: 400;
+	color: #2C2C2C;
+	font-size: 23px;	
+	margin:0;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+
+div.articleContainer {
+	display:flex;
+    align-items: stretch;
+   	
+
+
+
+
+	/*overflow: auto;*/
+	/*margin-top: 5%;*/
+	/*margin-bottom: 10%;*/
+	/*margin-left:auto;*/
+	/*margin-right:auto;*/
+	width: 100%;
+	height:100px;
+	background-color: rgba(255,255,255,0.7);
+	/*border: .5px solid #E6E6E6;*/
+	/*-webkit-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.18);
+	-moz-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.18);
+	box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.18);*/
+
+	/*NEW BOX SHADOW*/
+	-webkit-box-shadow: 0px 0px 0px 0.5px #E6E6E6;
+	-moz-box-shadow: 0px 0px 0px 0.5px #E6E6E6;
+	box-shadow: 0px 0px 0px 0.5px #E6E6E6;
+
+	transition: 300ms;
+
+	cursor: pointer;
+
+
+
+}
+
+div.articleContainerInner {
+	display: flex; /* nested flexbox */
+	flex-direction: column;
+
+	/*padding: 3%;*/
+	/*margin-left: 20px;*/
+	height:auto;
+	width: 100%;
+	/*float: left;*/
+
+	/*padding: 0;
+	margin-left: 110px;*/
+
+
+
+	/*display: inline-block;*/
+	/*width: 100%;*/
+	
+
+}
+
+/*NEED TO FIX THE SIZING TO HAVE A MINIMUM HEIGHT THAT IS ALLOWED AND NOT CROP UNTIL A CERTAIN THRESHOLD IS REACHED*/
+.articleImageContainer {
+	/*NEW*/
+	display: flex; /* nested flexbox, to enable flex properties */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+	/*OLD*/
+	/*flex-grow:0;
+	flex-shrink:0;*/
+
+
+	width: 110px;
+	/*float: left;
+	left: 0;*/
+}
+
+.articleImgCrop {
+	position: relative;
+	width: 110px;
+	height: 110px;
+	background-color: #2B2B2B;
+	overflow: hidden;
+
+}
+
+.articleImage {
+	position: absolute;
+	left: -100%;
+	right: -100%;
+	top: -100%;
+	bottom: -100%;
+	margin: auto; 
+	height: auto;
+	width: 200px;
+}
+
+h1.articleTitle {
+	display: flex; /* nested flexbox */
+    justify-content: flex-start;
+    align-items: center;
+
+
+	/*float: left;*/
+	/*width: 100%;*/
+	/*position: relative;*/
+	font-family:Helvetica Neue;
+	font-size: 16px;
+	font-weight: 600;
+	color: black;
+	padding-top: 3%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-bottom: 0;
+/*	margin-left: 5%;
+	margin-right: 5%;*/
+
+}
+
+h1.articleAuthor {
+	display: flex; /* nested flexbox */
+    justify-content: flex-start;
+    align-items: center;
+    /*flex-grow: 1;  box takes all available space (stretch, basically) */
+	padding-left: 5%;
+	padding-right: 5%;
+	/*margin-top: 0;*/
+
+	/*float: left;*/
+	font-family:Helvetica Neue;
+	font-weight: 400;
+	font-size: 12px;
+	padding-top: 1%;
+	color: #6E6E6E;
+	/*margin: 0;*/
+	text-transform:uppercase;
+	text-align: left;
+/*	margin-left: 5%;
+	margin-right: 5%;*/
+
+}
+
+p.articleDescription {
+	display: none;
+}
+
+
+a:link {
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+.mycluster {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(48,48,48,0.9);
+	text-align: center;
+	vertical-align: center;
+	font-size: 14px;
+	color: white;
+	-webkit-box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.4)
+}
+
+.clusterCircle {
+	margin: auto;
+	  position: absolute;
+	  top: 19%;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+	
+	#apMapLogoContainer {
+		display: block;
+		position: relative;
+		z-index: 800;
+		top: 28px;
+		left: 5px;
+		width: 150px;
+		height: 22px;
+		/*background-color: grey;*/
+		/*cursor: pointer;*/
+	}
+
+	div#map-button {
+		position: relative;
+		z-index: 800;
+		top: -11px;
+		left: 150px;
+		width: 50px;
+		cursor: pointer;
+		
+	}
+
+	#searchImg {
+		display: block;
+		position: absolute;
+	    margin: auto;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    height: 18px;
+	}
+
+	img#menuIco {
+		display: none;
+	}
+
+	#apMapImg {
+		display: block;
+		position: absolute;
+	    margin: auto;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    height: 22px;
+	}
+
+	div#scrollContainer {
+
+		width: 94%;
+		/*height: 100%;*/
+		overflow: hidden;
+
+	}
+
+    div.stateContainer {
+    	margin-top: 30px;
+    	/*margin:auto;*/
+    	width: 100%;
+    	height:65px;
+    	/*background-color: #D1D5D8;*/
+		/*background-color: rgba(48,65,80,0.1);*/
+		background-color: rgba(167,176,184,0.9);
+    }
+
+
+    h1.stateText{
+    	display: block;
+    	text-align: center;
+    	font-family:Helvetica Neue;
+    	font-weight: 200;
+    	color: #2C2C2C;
+    	font-size: 30px;	
+    	margin:0;
+    	line-height: 65px;
+    	vertical-align: middle;
+    }
+
+    div#emptyContainer {
+    	margin:auto;
+    	width: 100%;
+    	height:50px;
+
+    }
+
+    div.container {
+    	/*width: 100%;*/
+    	height: 100%;
+    	position: absolute;
+    	display: hidden;
+    	top: 0;
+    	/*right: -100%;*/
+    	right: 0;
+    	z-index: 1000;
+    	float:right;
+    	width: 500px;
+    	height:100%;
+    	background-color: rgba(255,255,255,0);
+    	overflow: auto;
+    }
+
+	
+
+	.apMenuContainerTexts{
+		position: relative;
+		display: inline-block;
+		float: right;
+		top: 0;
+		width: 160px;
+		height: 50px;
+		/*background-color: grey;*/
+	}
+
+	div.articleContainer {
+		display: flex;
+	   	align-items: stretch;
+	   	flex-direction: column;
+
+		/*display: block;*/
+		overflow: auto;
+		/*margin-top: 5%;*/
+		/*margin-bottom: 10%;*/
+		margin-left:auto;
+		margin-right:auto;
+		width: 100%;
+		height:auto;
+		background-color: rgba(255,255,255,0.7);
+		/*border: .5px solid #E6E6E6;*/
+		/*-webkit-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.18);
+		-moz-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.18);
+		box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.18);*/
+
+		/*NEW BOX SHADOW*/
+		-webkit-box-shadow: 0px 0px 0px 0.5px #E6E6E6;
+		-moz-box-shadow: 0px 0px 0px 0.5px #E6E6E6;
+		box-shadow: 0px 0px 0px 0.5px #E6E6E6;
+
+		transition: 300ms;
+
+		cursor: pointer;
+
+
+
+	}
+
+	div.articleContainerInner {
+		display: flex; /* nested flexbox */
+	    flex-direction: column;	
+
+		padding: 3%;
+		height:auto;
+		width: 100%;
+		/*height:100%;*/
+		/*background-color: red;*/
+
+	}
+
+	/*NEED TO FIX THE SIZING TO HAVE A MINIMUM HEIGHT THAT IS ALLOWED AND NOT CROP UNTIL A CERTAIN THRESHOLD IS REACHED*/
+	.articleImageContainer {
+		display: flex; /* nested flexbox */
+	    justify-content: center;
+	    align-items: center;
+
+		/*position: relative;*/
+		width: 100%;
+		max-height: 340px;
+		min-height: 100px;
+		background-color: #2B2B2B;
+	}
+
+	.articleImgCrop {
+		position: initial;
+		width: auto;
+		height: auto;
+		background-color: #2B2B2B;
+		overflow: hidden;
+
+	}
+
+	.articleImage {
+		height: 340px;
+		width: auto;
+		position: initial;
+		display: block;
+		margin: auto;
+		left: 0;
+		right: 100px;
+		top: 0;
+		bottom: 0;
+		/*max-height:350px;*/
+		/*height:400px;*/
+	}
+
+
+/*REG ONES*/
+	/*.articleImageContainer {
+		float: left;
+	}
+
+	.articleImgCrop {
+		position: relative;
+		width: 110px;
+		height: 110px;
+		background-color: #2B2B2B;
+		overflow: hidden;
+
+	}
+
+	.articleImage {
+		position: absolute;
+		left: -100%;
+		right: -100%;
+		top: -100%;
+		bottom: -100%;
+		margin: auto; 
+		height: auto;
+		width: 200px;
+	}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	h1.articleTitle {
+		display: flex; /* nested flexbox */
+	    justify-content: flex-start;
+	    align-items: center;	
+
+		float: none;
+		font-family:Helvetica Neue;
+		font-size: 18px;
+		font-weight: 600;
+		color: black;
+		margin: 0;
+		padding-top: 0;
+		padding-left: 0;
+		padding-right: 5%;
+
+	}
+
+	h1.articleAuthor {
+		display: flex; /* nested flexbox */
+	    justify-content: flex-start;
+	    align-items: center;	
+
+		float: none;
+		font-family:Helvetica Neue;
+		font-weight: 400;
+		font-size: 14px;
+		padding-top: 1%;
+		color: #6E6E6E;
+		margin: 0;
+		text-transform:uppercase;
+		padding-left: 0;
+		padding-right: 5%;
+
+	}
+
+	p.articleDescription {
+		display: flex; /* nested flexbox */
+	    justify-content: flex-start;
+	    align-items: center;	
+
+		display: block;
+		margin-top: 3%;
+		font-family:Helvetica Neue;
+		font-weight: 200;
+		font-size: 14px;
+		color: black;
+		padding-right: 5%;
+
+	}
+}
+
